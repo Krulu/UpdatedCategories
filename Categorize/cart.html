@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Categories</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {     
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    padding: 130px 40px 40px; /* Increased top padding */
+    color: #333
+
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      
+    }
+    
+  
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .category {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+      background-color: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .category:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .category img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .category h3 {
+      padding: 20px;
+      font-size: 1.3rem;
+      text-align: center;
+      background-color: #f9fbfc;
+    }
+
+    
+/* General header styling */
+    header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+}
+
+/* Container for logo and nav */
+    .logo-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    }
+
+
+    .logo {
+    height: 60px;
+    }
+
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    }
+    .nav-links li{
+        margin-left: 50px;
+        font-size: 14px;
+        font-family: 'Noto sans JP';
+    }
+
+    .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+    .nav-links li a:hover {
+    color: darkviolet; /* Change this to your preferred hover color */
+    }
+
+    ul {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li{
+        list-style: none;
+        margin-left: 100px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 0.4 ease-in-out;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+        <div class="logo-container">
+            <img src="image/logoo.png" alt="BYTE FORCE" class="logo">
+            <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">PRODUCTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+  <h1>Browse Categories</h1>
+
+  <div class="categories">
+    <div class="category">
+        <a href="graphics-card.html" class="category">
+      <img src="image/Rx6600.webp" alt="Graphics Card">
+      <h3>Graphics Cards</h3>
+      </a>
+    </div>
+
+    <div class="category">
+        <a href="peripirals.html" class="category">
+      <img src="image/AulaF2066.webp" alt="RAM">
+      <h3>Pheripirals</h3>
+      </a>
+    </div>
+
+    <div class="category">
+        <a href="Monitors.html" class="category">
+      <img src="image/MonitorPage.webp" alt="monitor">
+      <h3>Monitors</h3>
+      </a>
+    </div>
+
+    
+  </div>
+    
+</body>
+</html>
